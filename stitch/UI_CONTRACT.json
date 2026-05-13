@@ -1,0 +1,534 @@
+[
+  {
+    "screenId": "206262f2ffaa45c482d15a0e8b020470",
+    "screenTitle": "Main Menu",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Arcade",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Game",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 231
+      },
+      {
+        "type": "link",
+        "label": "Social",
+        "href": "#",
+        "line": 235
+      },
+      {
+        "type": "link",
+        "label": "Config",
+        "href": "#",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "New Game ENTER",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "Resume NO SAVE DATA",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "Options",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 206
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Arcade",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Game",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 231
+      },
+      {
+        "type": "link",
+        "label": "Social",
+        "href": "#",
+        "line": 235
+      },
+      {
+        "type": "link",
+        "label": "Config",
+        "href": "#",
+        "line": 239
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "New Game ENTER",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "Resume NO SAVE DATA",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "Options",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 206
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "28e92d15ced34f08a13145445ae41d70",
+    "screenTitle": "Game Board",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "pause",
+        "line": 288
+      },
+      {
+        "type": "button",
+        "label": "arrow_left",
+        "line": 296
+      },
+      {
+        "type": "button",
+        "label": "arrow_drop_down",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "arrow_right",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "rotate_right",
+        "line": 308
+      },
+      {
+        "type": "button",
+        "label": "keyboard_double_arrow_down",
+        "line": 311
+      },
+      {
+        "type": "button",
+        "label": "Game",
+        "line": 367
+      },
+      {
+        "type": "button",
+        "label": "Stats",
+        "line": 372
+      },
+      {
+        "type": "button",
+        "label": "Social",
+        "line": 377
+      },
+      {
+        "type": "button",
+        "label": "Config",
+        "line": 382
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "help_outline",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "pause",
+        "line": 288
+      },
+      {
+        "type": "button",
+        "label": "arrow_left",
+        "line": 296
+      },
+      {
+        "type": "button",
+        "label": "arrow_drop_down",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "arrow_right",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "rotate_right",
+        "line": 308
+      },
+      {
+        "type": "button",
+        "label": "keyboard_double_arrow_down",
+        "line": 311
+      },
+      {
+        "type": "button",
+        "label": "Game",
+        "line": 367
+      },
+      {
+        "type": "button",
+        "label": "Stats",
+        "line": 372
+      },
+      {
+        "type": "button",
+        "label": "Social",
+        "line": 377
+      },
+      {
+        "type": "button",
+        "label": "Config",
+        "line": 382
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "acde181845f54c8ab87d1e1f2154acbd",
+    "screenTitle": "Pause Overlay",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Resume",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "Quit to Menu",
+        "line": 200
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Resume",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "Quit to Menu",
+        "line": 200
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 3,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "e8ab566491be4378a9586d9a07b4fe3d",
+    "screenTitle": "Game Options",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Save &amp; Return",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "Clear Local Storage",
+        "line": 275
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 170
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 182
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 199
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 213
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 225
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 239
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 261
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Save &amp; Return",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "Clear Local Storage",
+        "line": 275
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 170
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 182
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 199
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 213
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 225
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 239
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 261
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 10,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0917cde82f194241ba82f3c7a6b52e12",
+    "screenTitle": "Controls Help",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Back",
+        "line": 129
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Back",
+        "line": 129
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 1,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "3494036e53364e89b40302c39ea5ba8c",
+    "screenTitle": "Game Over",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Play Again",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "Main Menu",
+        "line": 224
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Play Again",
+        "line": 218
+      },
+      {
+        "type": "button",
+        "label": "Main Menu",
+        "line": 224
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 2,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
