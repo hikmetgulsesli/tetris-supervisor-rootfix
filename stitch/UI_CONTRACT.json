@@ -1,0 +1,850 @@
+[
+  {
+    "screenId": "fallback-main-menu",
+    "screenTitle": "Main Menu",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Start Game",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Start Game",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "fallback-game-board",
+    "screenTitle": "Game Board",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "fallback-pause-overlay",
+    "screenTitle": "Pause Overlay",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "fallback-game-over",
+    "screenTitle": "Game Over",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "fallback-settings",
+    "screenTitle": "Settings",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Start Level",
+        "inputType": "select",
+        "placeholder": "Level",
+        "line": 1
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "fallback-help-and-rules",
+    "screenTitle": "Help and Rules",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "fallback-profile",
+    "screenTitle": "Profile",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Main Menu",
+        "href": "#fallback-main-menu",
+        "line": 1
+      },
+      {
+        "type": "link",
+        "label": "Game Board",
+        "href": "#fallback-game-board",
+        "line": 2
+      },
+      {
+        "type": "link",
+        "label": "Pause Overlay",
+        "href": "#fallback-pause-overlay",
+        "line": 3
+      },
+      {
+        "type": "link",
+        "label": "Game Over",
+        "href": "#fallback-game-over",
+        "line": 4
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#fallback-settings",
+        "line": 5
+      },
+      {
+        "type": "link",
+        "label": "Help and Rules",
+        "href": "#fallback-help-and-rules",
+        "line": 6
+      },
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#fallback-profile",
+        "line": 7
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 1
+      },
+      {
+        "type": "button",
+        "label": "Open Settings",
+        "line": 1
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]

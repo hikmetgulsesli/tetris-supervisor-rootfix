@@ -1,0 +1,1879 @@
+{
+  "generatedAt": "2026-05-13T06:19:26.892Z",
+  "screenCount": 7,
+  "screens": {
+    "fallback-game-board": {
+      "screenId": "fallback-game-board",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "game-layout"
+          ],
+          "childCount": 99
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Pause",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Pause",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Game Board"
+    },
+    "fallback-game-over": {
+      "screenId": "fallback-game-over",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "game-layout"
+          ],
+          "childCount": 99
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Pause",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Pause",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Game Over"
+    },
+    "fallback-help-and-rules": {
+      "screenId": "fallback-help-and-rules",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "command-panel"
+          ],
+          "childCount": 5
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Help and Rules"
+    },
+    "fallback-main-menu": {
+      "screenId": "fallback-main-menu",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "command-panel"
+          ],
+          "childCount": 5
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Main Menu"
+    },
+    "fallback-pause-overlay": {
+      "screenId": "fallback-pause-overlay",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "result-panel"
+          ],
+          "childCount": 1
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Play Again",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Share Score",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Main Menu",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Play Again",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Share Score",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Main Menu",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Pause Overlay"
+    },
+    "fallback-profile": {
+      "screenId": "fallback-profile",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "command-panel"
+          ],
+          "childCount": 5
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Profile"
+    },
+    "fallback-settings": {
+      "screenId": "fallback-settings",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "settings-panel"
+          ],
+          "childCount": 0
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Save Settings",
+          "classes": [],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Defaults",
+          "classes": [],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "level",
+          "placeholder": "",
+          "name": "level",
+          "classes": [],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "assist",
+          "placeholder": "",
+          "name": "assist",
+          "classes": [],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "input",
+          "label": "Arrow keys, WASD, or touch",
+          "placeholder": "Arrow keys, WASD, or touch",
+          "name": "controls",
+          "classes": [],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#fallback-settings",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "href": "#fallback-help-and-rules",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "href": "#fallback-profile",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-profile"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "expectedBehavior": "navigate:#fallback-settings"
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "expectedBehavior": "navigate:#fallback-help-and-rules"
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "expectedBehavior": "navigate:#fallback-profile"
+        },
+        {
+          "kind": "button",
+          "label": "Save Settings",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Defaults",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "input",
+          "label": "level",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "assist",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Arrow keys, WASD, or touch",
+          "type": "input",
+          "placeholder": "Arrow keys, WASD, or touch",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#fallback-settings",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Help and Rules",
+          "icon": null,
+          "route": "#fallback-help-and-rules",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Profile",
+          "icon": null,
+          "route": "#fallback-profile",
+          "active": false
+        }
+      ],
+      "title": "Settings"
+    }
+  }
+}
