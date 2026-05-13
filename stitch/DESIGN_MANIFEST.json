@@ -1,0 +1,50 @@
+[
+  {
+    "screenId": "206262f2ffaa45c482d15a0e8b020470",
+    "title": "Main Menu",
+    "htmlFile": "206262f2ffaa45c482d15a0e8b020470.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzM5YzUzY2IxMzM1ZTRiNjZhNTE1MGVlODFmNzJiNzcwEgsSBxCqtuymzhMYAZIBIwoKcHJvamVjdF9pZBIVQhM2MjU2NzU2MDk5ODQzMTAxODc5&filename=&opi=96797242",
+    "localHtml": "/home/setrox/projects/tetris-supervisor-rootfix/stitch/206262f2ffaa45c482d15a0e8b020470.html"
+  },
+  {
+    "screenId": "28e92d15ced34f08a13145445ae41d70",
+    "title": "Game Board",
+    "htmlFile": "28e92d15ced34f08a13145445ae41d70.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzE3MjQ2NTU1OTUwZDQyZGRiNWFiM2JkODhlZTE0ODczEgsSBxCqtuymzhMYAZIBIwoKcHJvamVjdF9pZBIVQhM2MjU2NzU2MDk5ODQzMTAxODc5&filename=&opi=96797242",
+    "localHtml": "/home/setrox/projects/tetris-supervisor-rootfix/stitch/28e92d15ced34f08a13145445ae41d70.html"
+  },
+  {
+    "screenId": "acde181845f54c8ab87d1e1f2154acbd",
+    "title": "Pause Overlay",
+    "htmlFile": "acde181845f54c8ab87d1e1f2154acbd.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2U0NzdmNDJiYWExNDQ4NDM4MmJiYTRmNTE0YTJiMzJkEgsSBxCqtuymzhMYAZIBIwoKcHJvamVjdF9pZBIVQhM2MjU2NzU2MDk5ODQzMTAxODc5&filename=&opi=96797242",
+    "localHtml": "/home/setrox/projects/tetris-supervisor-rootfix/stitch/acde181845f54c8ab87d1e1f2154acbd.html"
+  },
+  {
+    "screenId": "e8ab566491be4378a9586d9a07b4fe3d",
+    "title": "Game Options",
+    "htmlFile": "e8ab566491be4378a9586d9a07b4fe3d.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2E4Njg2NjQ1ODdmNTRjYmI4ZGZiYmZmM2Y3MTcyODFkEgsSBxCqtuymzhMYAZIBIwoKcHJvamVjdF9pZBIVQhM2MjU2NzU2MDk5ODQzMTAxODc5&filename=&opi=96797242",
+    "localHtml": "/home/setrox/projects/tetris-supervisor-rootfix/stitch/e8ab566491be4378a9586d9a07b4fe3d.html"
+  },
+  {
+    "screenId": "0917cde82f194241ba82f3c7a6b52e12",
+    "title": "Controls Help",
+    "htmlFile": "0917cde82f194241ba82f3c7a6b52e12.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2E5YzBiZWYxYjRhMDQzMTI5NDA2NmI0MTcxZjYxN2ViEgsSBxCqtuymzhMYAZIBIwoKcHJvamVjdF9pZBIVQhM2MjU2NzU2MDk5ODQzMTAxODc5&filename=&opi=96797242",
+    "localHtml": "/home/setrox/projects/tetris-supervisor-rootfix/stitch/0917cde82f194241ba82f3c7a6b52e12.html"
+  },
+  {
+    "screenId": "3494036e53364e89b40302c39ea5ba8c",
+    "title": "Game Over",
+    "htmlFile": "3494036e53364e89b40302c39ea5ba8c.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2IxMWE4ZTFlYzU1ZDQxODJiNzEzNWNkOTJlNDk1YmE5EgsSBxCqtuymzhMYAZIBIwoKcHJvamVjdF9pZBIVQhM2MjU2NzU2MDk5ODQzMTAxODc5&filename=&opi=96797242",
+    "localHtml": "/home/setrox/projects/tetris-supervisor-rootfix/stitch/3494036e53364e89b40302c39ea5ba8c.html"
+  }
+]

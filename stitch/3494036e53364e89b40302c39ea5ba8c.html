@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Over Screen</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#2c3135",
+                    "surface-container": "#1b2024",
+                    "inverse-primary": "#006591",
+                    "error-container": "#93000a",
+                    "surface-container-high": "#252b2f",
+                    "tertiary-fixed-dim": "#ffb86e",
+                    "on-secondary": "#472a00",
+                    "on-primary-container": "#003751",
+                    "secondary": "#ffb95f",
+                    "on-secondary-fixed-variant": "#653e00",
+                    "tertiary-container": "#de8712",
+                    "on-primary": "#00344d",
+                    "secondary-container": "#ee9800",
+                    "on-tertiary-fixed": "#2c1600",
+                    "primary-fixed": "#c9e6ff",
+                    "on-background": "#dee3e9",
+                    "on-primary-fixed-variant": "#004c6e",
+                    "on-primary-fixed": "#001e2f",
+                    "outline": "#88929b",
+                    "on-secondary-fixed": "#2a1700",
+                    "inverse-surface": "#dee3e9",
+                    "background": "#0f1418",
+                    "surface-variant": "#30353a",
+                    "surface-bright": "#353a3e",
+                    "secondary-fixed": "#ffddb8",
+                    "secondary-fixed-dim": "#ffb95f",
+                    "on-secondary-container": "#5b3800",
+                    "outline-variant": "#3e4850",
+                    "on-tertiary-container": "#4d2b00",
+                    "surface-tint": "#89ceff",
+                    "on-surface": "#dee3e9",
+                    "surface-dim": "#0f1418",
+                    "primary": "#89ceff",
+                    "surface-container-low": "#171c20",
+                    "tertiary-fixed": "#ffdcbd",
+                    "on-surface-variant": "#bec8d2",
+                    "primary-fixed-dim": "#89ceff",
+                    "primary-container": "#0ea5e9",
+                    "on-error": "#690005",
+                    "surface-container-highest": "#30353a",
+                    "surface": "#0f1418",
+                    "on-tertiary": "#492900",
+                    "tertiary": "#ffb86e",
+                    "on-error-container": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#693c00",
+                    "surface-container-lowest": "#0a0f13"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "block-gap": "2px",
+                    "touch-target": "44px",
+                    "panel-padding": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-mono": [
+                            "JetBrains Mono"
+                    ],
+                    "label-lg-bold": [
+                            "Hanken Grotesk"
+                    ],
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "display-xl": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-sm": [
+                            "Hanken Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "label-mono": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "label-lg-bold": [
+                            "18px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-sm": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        /* Ambient base styling for the arcade void */
+        body {
+            background-color: #0f1418;
+            background-image: 
+                radial-gradient(circle at 50% -20%, rgba(255, 180, 171, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 50% 120%, rgba(137, 206, 255, 0.05) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="text-on-background min-h-screen w-full flex flex-col items-center justify-center p-gutter relative overflow-hidden">
+<!-- Decorative Fixed Grid Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-0 flex flex-wrap" style="background-image: linear-gradient(to right, #88929b 1px, transparent 1px), linear-gradient(to bottom, #88929b 1px, transparent 1px); background-size: 32px 32px;"></div>
+<!-- Main Content Container -->
+<div class="flex flex-col items-center w-full max-w-[400px] z-10 relative gap-8">
+<!-- Header Section -->
+<div class="flex flex-col items-center gap-4 w-full">
+<!-- Luminescent Text Effect for "GAME OVER" -->
+<div class="relative inline-block w-full text-center">
+<h1 aria-hidden="true" class="absolute inset-0 text-display-xl font-display-xl text-error blur-xl opacity-60 tracking-widest uppercase">GAME OVER</h1>
+<h1 class="relative text-display-xl font-display-xl text-error tracking-widest uppercase z-10">GAME OVER</h1>
+</div>
+<!-- High Score Indicator (Golden/Tertiary Glow) -->
+<div class="relative w-full max-w-[280px]">
+<div class="absolute inset-0 bg-tertiary blur-lg opacity-20 rounded-full"></div>
+<div class="relative bg-surface-container border border-tertiary/50 px-6 py-2 rounded-full flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="trophy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">trophy</span>
+<span class="text-label-lg-bold font-label-lg-bold text-tertiary uppercase tracking-wider">High Score</span>
+</div>
+</div>
+</div>
+<!-- HUD Bento Grid for Stats -->
+<div class="grid grid-cols-2 gap-unit w-full relative">
+<!-- Background panel ambient glow -->
+<div class="absolute inset-0 bg-primary blur-[100px] opacity-5 -z-10 rounded-3xl"></div>
+<!-- Final Score Panel (Spans full width) -->
+<div class="col-span-2 bg-surface-container border border-outline-variant rounded-xl p-panel-padding flex flex-col items-center justify-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<span class="text-label-mono font-label-mono text-on-surface-variant mb-2 tracking-widest">FINAL SCORE</span>
+<!-- Glowing Score Text -->
+<div class="relative">
+<span aria-hidden="true" class="absolute inset-0 text-display-xl font-display-xl text-primary blur-md opacity-40 text-center">1,420,000</span>
+<span class="relative text-display-xl font-display-xl text-primary text-center z-10">1,420,000</span>
+</div>
+</div>
+<!-- Lines Cleared Panel -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-gutter flex flex-col items-center justify-center relative">
+<div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-transparent via-surface-variant to-transparent"></div>
+<span class="text-label-mono font-label-mono text-on-surface-variant mb-1 tracking-widest">LINES</span>
+<span class="text-headline-lg font-headline-lg text-on-surface">142</span>
+</div>
+<!-- Level Reached Panel -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-gutter flex flex-col items-center justify-center relative">
+<div class="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-surface-variant to-transparent"></div>
+<span class="text-label-mono font-label-mono text-on-surface-variant mb-1 tracking-widest">LEVEL</span>
+<span class="text-headline-lg font-headline-lg text-on-surface">15</span>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="flex flex-col gap-4 w-full mt-4">
+<!-- Primary Arcade Button (Play Again) -->
+<div class="relative w-full group">
+<!-- Intense Outer Glow for resting state, amplifies on hover -->
+<div class="absolute inset-0 bg-primary blur-md opacity-40 rounded-lg group-hover:opacity-60 transition-opacity duration-300"></div>
+<button class="relative w-full bg-primary text-on-primary h-[56px] rounded-lg flex items-center justify-center gap-2 text-headline-sm font-headline-sm uppercase tracking-wide border border-primary-fixed-dim hover:bg-surface-tint transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined" data-icon="replay">replay</span>
+                    Play Again
+                </button>
+</div>
+<!-- Secondary Button (Main Menu) -->
+<button class="w-full bg-surface-container text-on-surface border border-outline-variant h-[56px] rounded-lg flex items-center justify-center text-label-lg-bold font-label-lg-bold uppercase tracking-wider hover:bg-surface-container-high transition-colors active:scale-[0.98]">
+                Main Menu
+            </button>
+</div>
+</div>
+</body></html>

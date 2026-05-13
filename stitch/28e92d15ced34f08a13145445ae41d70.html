@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tetris Supervisor Root Fix - Game Board</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#2c3135",
+                      "surface-container": "#1b2024",
+                      "inverse-primary": "#006591",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#252b2f",
+                      "tertiary-fixed-dim": "#ffb86e",
+                      "on-secondary": "#472a00",
+                      "on-primary-container": "#003751",
+                      "secondary": "#ffb95f",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "tertiary-container": "#de8712",
+                      "on-primary": "#00344d",
+                      "secondary-container": "#ee9800",
+                      "on-tertiary-fixed": "#2c1600",
+                      "primary-fixed": "#c9e6ff",
+                      "on-background": "#dee3e9",
+                      "on-primary-fixed-variant": "#004c6e",
+                      "on-primary-fixed": "#001e2f",
+                      "outline": "#88929b",
+                      "on-secondary-fixed": "#2a1700",
+                      "inverse-surface": "#dee3e9",
+                      "background": "#0f1418",
+                      "surface-variant": "#30353a",
+                      "surface-bright": "#353a3e",
+                      "secondary-fixed": "#ffddb8",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "on-secondary-container": "#5b3800",
+                      "outline-variant": "#3e4850",
+                      "on-tertiary-container": "#4d2b00",
+                      "surface-tint": "#89ceff",
+                      "on-surface": "#dee3e9",
+                      "surface-dim": "#0f1418",
+                      "primary": "#89ceff",
+                      "surface-container-low": "#171c20",
+                      "tertiary-fixed": "#ffdcbd",
+                      "on-surface-variant": "#bec8d2",
+                      "primary-fixed-dim": "#89ceff",
+                      "primary-container": "#0ea5e9",
+                      "on-error": "#690005",
+                      "surface-container-highest": "#30353a",
+                      "surface": "#0f1418",
+                      "on-tertiary": "#492900",
+                      "tertiary": "#ffb86e",
+                      "on-error-container": "#ffdad6",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed-variant": "#693c00",
+                      "surface-container-lowest": "#0a0f13",
+                      
+                      // Tetromino Colors (Added for specific game block styling based on design system)
+                      "tetris-i": "#00FFFF",
+                      "tetris-j": "#0000FF",
+                      "tetris-l": "#FFA500",
+                      "tetris-o": "#FFFF00",
+                      "tetris-s": "#00FF00",
+                      "tetris-t": "#800080",
+                      "tetris-z": "#FF0000",
+                      "tetris-ghost": "rgba(255, 255, 255, 0.15)"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "block-gap": "2px",
+                      "touch-target": "44px",
+                      "panel-padding": "24px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "label-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "label-lg-bold": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-xl": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-sm": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-lg-bold": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Specific glows for game blocks as defined in style guidance */
+        .block-glow-i { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4), 0 0 8px rgba(0,255,255,0.4); }
+        .block-glow-l { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4), 0 0 8px rgba(255,165,0,0.4); }
+        .block-glow-t { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4), 0 0 8px rgba(128,0,128,0.4); }
+        .block-ghost { box-shadow: inset 0 0 0 2px rgba(255,255,255,0.3); background-color: rgba(255,255,255,0.05); }
+        
+        /* Grid setup for 10x20 board */
+        .tetris-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(20, 1fr);
+            gap: 2px;
+            aspect-ratio: 1 / 2;
+        }
+        
+        .mini-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 2px;
+            aspect-ratio: 1 / 1;
+        }
+
+        /* Prevent zooming on double tap for controls */
+        .touch-control {
+            touch-action: manipulation;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background h-screen w-screen overflow-hidden flex flex-col font-body-md text-body-md select-none">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant flex justify-between items-center w-full px-gutter h-touch-target shrink-0 z-50">
+<div class="flex items-center gap-4">
+<span class="text-headline-sm font-headline-sm font-extrabold text-primary dark:text-primary tracking-tighter">ROOT FIX</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-touch-target w-touch-target flex items-center justify-center text-on-surface-variant hover:bg-surface-variant/20 transition-colors rounded-full touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+<button class="h-touch-target w-touch-target flex items-center justify-center text-on-surface-variant hover:bg-surface-variant/20 transition-colors rounded-full touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">help_outline</span>
+</button>
+</div>
+</header>
+<!-- Main Game Area Container -->
+<main class="flex-1 flex flex-col md:flex-row w-full max-w-6xl mx-auto overflow-hidden relative">
+<!-- Left HUD (Hold & Status) - Hidden on small mobile, stacked on tablet, side on desktop -->
+<aside class="hidden md:flex flex-col w-64 p-panel-padding gap-6 shrink-0 h-full border-r border-outline-variant bg-surface-container">
+<!-- Hold Panel -->
+<div class="bg-surface-dim border border-outline-variant rounded-lg p-4 flex flex-col items-center">
+<h2 class="w-full text-left font-label-mono text-label-mono text-on-surface-variant mb-4 uppercase">Hold</h2>
+<div class="w-24 h-24 mini-grid">
+<!-- Example L Piece in Hold -->
+<div class="col-start-2 row-start-2 w-full h-full bg-tetris-l block-glow-l"></div>
+<div class="col-start-2 row-start-3 w-full h-full bg-tetris-l block-glow-l"></div>
+<div class="col-start-2 row-start-4 w-full h-full bg-tetris-l block-glow-l"></div>
+<div class="col-start-3 row-start-4 w-full h-full bg-tetris-l block-glow-l"></div>
+</div>
+</div>
+<!-- Bridge Status -->
+<div class="bg-surface-dim border border-outline-variant rounded-lg p-4 mt-auto">
+<h2 class="font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase">Bridge Status</h2>
+<div class="flex items-center gap-2 text-primary font-label-mono text-label-mono">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    SYNCED v1.0.4
+                </div>
+</div>
+</aside>
+<!-- Center Game Board Area -->
+<section class="flex-1 flex flex-col items-center justify-center p-4 md:p-8 relative min-h-0">
+<!-- Top Mobile HUD (Only visible on mobile) -->
+<div class="md:hidden w-full flex justify-between items-center mb-4 px-2 max-w-[300px]">
+<div class="bg-surface-dim border border-outline-variant rounded p-2 flex flex-col items-center w-16">
+<span class="text-[10px] font-label-mono text-on-surface-variant uppercase">Hold</span>
+<!-- Tiny L Piece -->
+<div class="grid grid-cols-4 grid-rows-4 gap-[1px] w-8 h-8 mt-1">
+<div class="col-start-2 row-start-2 w-full h-full bg-tetris-l"></div>
+<div class="col-start-2 row-start-3 w-full h-full bg-tetris-l"></div>
+<div class="col-start-2 row-start-4 w-full h-full bg-tetris-l"></div>
+<div class="col-start-3 row-start-4 w-full h-full bg-tetris-l"></div>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-display-xl font-display-xl text-primary tracking-tighter leading-none">004200</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-widest mt-1">Score</span>
+</div>
+<div class="bg-surface-dim border border-outline-variant rounded p-2 flex flex-col items-center w-16">
+<span class="text-[10px] font-label-mono text-on-surface-variant uppercase">Next</span>
+<!-- Tiny I Piece -->
+<div class="grid grid-cols-4 grid-rows-4 gap-[1px] w-8 h-8 mt-1">
+<div class="col-start-1 row-start-2 w-full h-full bg-tetris-i"></div>
+<div class="col-start-2 row-start-2 w-full h-full bg-tetris-i"></div>
+<div class="col-start-3 row-start-2 w-full h-full bg-tetris-i"></div>
+<div class="col-start-4 row-start-2 w-full h-full bg-tetris-i"></div>
+</div>
+</div>
+</div>
+<!-- The Matrix (Game Board) -->
+<div class="bg-[#0F172A] border border-outline-variant tetris-grid w-full max-w-[300px] md:max-w-[350px] shadow-[0_0_30px_rgba(0,0,0,0.5)] relative">
+<!-- Background Grid Lines (visual effect) -->
+<div class="absolute inset-0 grid grid-cols-10 grid-rows-20 opacity-20 pointer-events-none">
+<!-- Generative grid lines could go here, but css grid gap handles it nicely -->
+</div>
+<!-- Placed Blocks (Bottom Rows) -->
+<!-- Row 19 (bottom-most) -->
+<div class="col-start-1 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-2 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-3 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-4 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<!-- Gap at 5 -->
+<div class="col-start-6 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-7 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-8 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-9 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<div class="col-start-10 row-start-20 w-full h-full bg-surface-container border border-outline-variant/50"></div>
+<!-- Active Falling Piece (T Piece) -->
+<div class="col-start-4 row-start-5 w-full h-full bg-tetris-t block-glow-t"></div>
+<div class="col-start-5 row-start-5 w-full h-full bg-tetris-t block-glow-t z-10 relative">
+<!-- Core highlight -->
+<div class="absolute inset-1 bg-white/20 rounded-sm"></div>
+</div>
+<div class="col-start-6 row-start-5 w-full h-full bg-tetris-t block-glow-t"></div>
+<div class="col-start-5 row-start-4 w-full h-full bg-tetris-t block-glow-t"></div>
+<!-- Ghost Piece -->
+<div class="col-start-4 row-start-19 w-full h-full block-ghost"></div>
+<div class="col-start-5 row-start-19 w-full h-full block-ghost"></div>
+<div class="col-start-6 row-start-19 w-full h-full block-ghost"></div>
+<div class="col-start-5 row-start-18 w-full h-full block-ghost"></div>
+<!-- Pause Button Overlay -->
+<button class="absolute top-4 right-4 w-10 h-10 bg-surface-dim/80 backdrop-blur border border-outline-variant rounded-full flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors z-20 touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+</div>
+<!-- Mobile Controls (D-Pad & Actions) -->
+<div class="md:hidden w-full flex justify-between items-end mt-6 px-4 max-w-[400px]">
+<!-- Left: D-Pad / Movement -->
+<div class="grid grid-cols-3 grid-rows-2 gap-2 w-32 h-24">
+<button class="col-start-1 row-start-2 bg-surface-variant border border-outline-variant rounded-lg flex items-center justify-center active:bg-primary active:text-on-primary transition-colors touch-control h-12">
+<span class="material-symbols-outlined">arrow_left</span>
+</button>
+<button class="col-start-2 row-start-2 bg-surface-variant border border-outline-variant rounded-lg flex items-center justify-center active:bg-primary active:text-on-primary transition-colors touch-control h-12">
+<span class="material-symbols-outlined">arrow_drop_down</span>
+</button>
+<button class="col-start-3 row-start-2 bg-surface-variant border border-outline-variant rounded-lg flex items-center justify-center active:bg-primary active:text-on-primary transition-colors touch-control h-12">
+<span class="material-symbols-outlined">arrow_right</span>
+</button>
+</div>
+<!-- Right: Actions (Rotate / Hard Drop) -->
+<div class="flex gap-4">
+<button class="w-14 h-14 rounded-full bg-surface-variant border border-outline-variant flex items-center justify-center active:bg-secondary active:text-on-secondary transition-colors touch-control">
+<span class="material-symbols-outlined">rotate_right</span>
+</button>
+<button class="w-16 h-16 rounded-full bg-primary text-on-primary border border-primary-fixed flex items-center justify-center shadow-[0_0_15px_rgba(137,206,255,0.4)] active:scale-95 transition-transform touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">keyboard_double_arrow_down</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Right HUD (Next, Score, Stats) - Hidden on small mobile, stacked on tablet, side on desktop -->
+<aside class="hidden md:flex flex-col w-64 p-panel-padding gap-6 shrink-0 h-full border-l border-outline-variant bg-surface-container">
+<!-- Next Panel -->
+<div class="bg-surface-dim border border-outline-variant rounded-lg p-4 flex flex-col items-center">
+<h2 class="w-full text-left font-label-mono text-label-mono text-on-surface-variant mb-4 uppercase">Next</h2>
+<div class="flex flex-col gap-4 items-center">
+<!-- Primary Next -->
+<div class="w-24 h-24 mini-grid">
+<div class="col-start-1 row-start-2 w-full h-full bg-tetris-i block-glow-i"></div>
+<div class="col-start-2 row-start-2 w-full h-full bg-tetris-i block-glow-i"></div>
+<div class="col-start-3 row-start-2 w-full h-full bg-tetris-i block-glow-i"></div>
+<div class="col-start-4 row-start-2 w-full h-full bg-tetris-i block-glow-i"></div>
+</div>
+<div class="w-full h-px bg-outline-variant/50"></div>
+<!-- Secondary Next (smaller) -->
+<div class="w-16 h-16 mini-grid opacity-70">
+<div class="col-start-2 row-start-2 w-full h-full bg-tetris-z opacity-80"></div>
+<div class="col-start-3 row-start-2 w-full h-full bg-tetris-z opacity-80"></div>
+<div class="col-start-3 row-start-3 w-full h-full bg-tetris-z opacity-80"></div>
+<div class="col-start-4 row-start-3 w-full h-full bg-tetris-z opacity-80"></div>
+</div>
+</div>
+</div>
+<!-- Score Panel -->
+<div class="bg-surface-dim border border-outline-variant rounded-lg p-4 flex flex-col items-end">
+<h2 class="w-full text-left font-label-mono text-label-mono text-on-surface-variant mb-1 uppercase">Score</h2>
+<span class="text-headline-lg font-headline-lg text-primary font-bold tracking-tighter">004200</span>
+</div>
+<!-- Stats Panel -->
+<div class="bg-surface-dim border border-outline-variant rounded-lg p-4 flex flex-col gap-4 mt-auto">
+<div>
+<div class="flex justify-between items-end mb-1">
+<h2 class="font-label-mono text-label-mono text-on-surface-variant uppercase">Level</h2>
+<span class="font-label-lg-bold text-label-lg-bold text-on-surface">04</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 bg-outline-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[60%]"></div>
+</div>
+</div>
+<div class="flex justify-between items-end pt-2 border-t border-outline-variant/50">
+<h2 class="font-label-mono text-label-mono text-on-surface-variant uppercase">Lines</h2>
+<span class="font-label-lg-bold text-label-lg-bold text-on-surface">42</span>
+</div>
+</div>
+</aside>
+</main>
+<!-- BottomNavBar (Mobile Only) - Using exact JSON implementation but suppressing FAB logic as this is a focused game screen -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-16 md:hidden bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant shadow-lg">
+<!-- Game (Active) -->
+<button class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-xl px-4 py-1 scale-90 transition-all touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="text-label-mono font-label-mono mt-1">Game</span>
+</button>
+<!-- Stats -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 transition-opacity touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">analytics</span>
+<span class="text-label-mono font-label-mono mt-1 text-[10px]">Stats</span>
+</button>
+<!-- Social -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 transition-opacity touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">groups</span>
+<span class="text-label-mono font-label-mono mt-1 text-[10px]">Social</span>
+</button>
+<!-- Config -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 transition-opacity touch-control">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings_input_component</span>
+<span class="text-label-mono font-label-mono mt-1 text-[10px]">Config</span>
+</button>
+</nav>
+</body></html>

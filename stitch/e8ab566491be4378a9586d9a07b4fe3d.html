@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tetris Supervisor - Settings</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration (Design System Source of Truth) -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#2c3135",
+                        "surface-container": "#1b2024",
+                        "inverse-primary": "#006591",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#252b2f",
+                        "tertiary-fixed-dim": "#ffb86e",
+                        "on-secondary": "#472a00",
+                        "on-primary-container": "#003751",
+                        "secondary": "#ffb95f",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "tertiary-container": "#de8712",
+                        "on-primary": "#00344d",
+                        "secondary-container": "#ee9800",
+                        "on-tertiary-fixed": "#2c1600",
+                        "primary-fixed": "#c9e6ff",
+                        "on-background": "#dee3e9",
+                        "on-primary-fixed-variant": "#004c6e",
+                        "on-primary-fixed": "#001e2f",
+                        "outline": "#88929b",
+                        "on-secondary-fixed": "#2a1700",
+                        "inverse-surface": "#dee3e9",
+                        "background": "#0f1418",
+                        "surface-variant": "#30353a",
+                        "surface-bright": "#353a3e",
+                        "secondary-fixed": "#ffddb8",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "on-secondary-container": "#5b3800",
+                        "outline-variant": "#3e4850",
+                        "on-tertiary-container": "#4d2b00",
+                        "surface-tint": "#89ceff",
+                        "on-surface": "#dee3e9",
+                        "surface-dim": "#0f1418",
+                        "primary": "#89ceff",
+                        "surface-container-low": "#171c20",
+                        "tertiary-fixed": "#ffdcbd",
+                        "on-surface-variant": "#bec8d2",
+                        "primary-fixed-dim": "#89ceff",
+                        "primary-container": "#0ea5e9",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#30353a",
+                        "surface": "#0f1418",
+                        "on-tertiary": "#492900",
+                        "tertiary": "#ffb86e",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#693c00",
+                        "surface-container-lowest": "#0a0f13"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "block-gap": "2px",
+                        "touch-target": "44px",
+                        "panel-padding": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "label-mono": ["JetBrains Mono"],
+                        "label-lg-bold": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-xl": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "label-lg-bold": ["18px", { "lineHeight": "24px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom range slider styling for Arcade feel */
+        input[type=range] {
+            -webkit-appearance: none;
+            background: transparent;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 24px;
+            width: 12px;
+            border-radius: 2px;
+            background: #89ceff; /* Primary */
+            cursor: pointer;
+            margin-top: -10px; 
+            box-shadow: 0 0 8px rgba(137, 206, 255, 0.6);
+            border: 1px solid #00344d; /* On-Primary */
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #3e4850; /* outline-variant */
+            border-radius: 2px;
+        }
+        input[type=range]:focus::-webkit-slider-thumb {
+            box-shadow: 0 0 12px rgba(137, 206, 255, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary/30">
+<!-- Sub-page Header (Navigation Suppressed as per Task-Focused rule) -->
+<header class="flex justify-between items-center w-full px-gutter h-touch-target border-b border-outline-variant bg-background shrink-0 sticky top-0 z-10">
+<!-- Back Button: Save and Return -->
+<button aria-label="Save and return to previous screen" class="flex items-center gap-2 text-primary font-bold hover:bg-surface-variant/20 transition-colors rounded px-2 min-h-[44px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background group">
+<span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="text-label-mono font-label-mono uppercase hidden sm:inline">Save &amp; Return</span>
+</button>
+<!-- Brand Anchor -->
+<div class="text-headline-sm font-headline-sm font-extrabold text-primary tracking-tighter absolute left-1/2 -translate-x-1/2 pointer-events-none">
+            ROOT FIX
+        </div>
+<!-- Decorative trailing space to balance flex-between -->
+<div class="w-[100px]"></div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto p-4 md:p-8 flex flex-col items-center">
+<div class="w-full max-w-2xl flex flex-col gap-6 pb-12">
+<!-- Page Title -->
+<div class="mb-2">
+<h1 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Supervisor Settings</h1>
+<p class="text-label-mono font-label-mono text-on-surface-variant mt-1">Configure telemetry and feedback parameters.</p>
+</div>
+<!-- AUDIO SETTINGS PANEL -->
+<section class="bg-surface-container border border-outline-variant rounded-lg p-panel-padding flex flex-col gap-6 shadow-[0_4px_24px_rgba(0,0,0,0.4)]">
+<header class="flex items-center gap-3 border-b border-outline-variant pb-3">
+<span class="material-symbols-outlined text-primary">graphic_eq</span>
+<h2 class="text-label-lg-bold font-label-lg-bold text-on-surface tracking-wider uppercase">Aural Telemetry</h2>
+</header>
+<div class="flex flex-col gap-6">
+<!-- Music Volume Slider -->
+<div class="flex flex-col gap-3 group">
+<div class="flex justify-between items-center">
+<label class="text-label-mono font-label-mono text-on-surface group-focus-within:text-primary transition-colors" for="music-vol">Music Synthesis</label>
+<span class="text-label-mono font-label-mono text-primary bg-surface border border-outline-variant px-2 py-1 rounded min-w-[3rem] text-center">80%</span>
+</div>
+<div class="flex items-center gap-4 min-h-[44px]">
+<span class="material-symbols-outlined text-on-surface-variant">volume_down</span>
+<input aria-label="Music Volume" class="w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface-container rounded-sm" id="music-vol" max="100" min="0" type="range" value="80"/>
+<span class="material-symbols-outlined text-on-surface-variant">volume_up</span>
+</div>
+</div>
+<!-- SFX Volume Slider -->
+<div class="flex flex-col gap-3 group">
+<div class="flex justify-between items-center">
+<label class="text-label-mono font-label-mono text-on-surface group-focus-within:text-primary transition-colors" for="sfx-vol">Tactile Audio (SFX)</label>
+<span class="text-label-mono font-label-mono text-primary bg-surface border border-outline-variant px-2 py-1 rounded min-w-[3rem] text-center">100%</span>
+</div>
+<div class="flex items-center gap-4 min-h-[44px]">
+<span class="material-symbols-outlined text-on-surface-variant">volume_down</span>
+<input aria-label="SFX Volume" class="w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface-container rounded-sm" id="sfx-vol" max="100" min="0" type="range" value="100"/>
+<span class="material-symbols-outlined text-on-surface-variant">volume_up</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GAMEPLAY SETTINGS PANEL -->
+<section class="bg-surface-container border border-outline-variant rounded-lg p-panel-padding flex flex-col gap-6 shadow-[0_4px_24px_rgba(0,0,0,0.4)]">
+<header class="flex items-center gap-3 border-b border-outline-variant pb-3">
+<span class="material-symbols-outlined text-primary">videogame_asset</span>
+<h2 class="text-label-lg-bold font-label-lg-bold text-on-surface tracking-wider uppercase">Simulation Parameters</h2>
+</header>
+<div class="flex flex-col gap-6">
+<!-- Starting Level Dropdown -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 min-h-[44px]">
+<label class="text-label-mono font-label-mono text-on-surface" for="start-level">Initial Velocity (Level)</label>
+<div class="relative">
+<select class="appearance-none bg-surface border border-outline-variant text-primary text-label-mono font-label-mono rounded px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent min-w-[140px] w-full sm:w-auto hover:bg-surface-variant/50 transition-colors cursor-pointer" id="start-level">
+<option value="1">Level 01</option>
+<option value="5">Level 05</option>
+<option selected="" value="10">Level 10</option>
+<option value="15">Level 15</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Difficulty Select (Radio Buttons styled as pills) -->
+<div class="flex flex-col gap-3">
+<label class="text-label-mono font-label-mono text-on-surface">Algorithm Aggression</label>
+<div aria-label="Difficulty Selection" class="grid grid-cols-3 gap-2" role="radiogroup">
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="difficulty" type="radio" value="casual"/>
+<div class="min-h-[44px] flex items-center justify-center border border-outline-variant rounded bg-surface text-on-surface-variant text-label-mono font-label-mono uppercase peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary peer-focus-visible:ring-2 peer-focus-visible:ring-primary peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-surface-container transition-all hover:bg-surface-variant">
+                                    Casual
+                                </div>
+</label>
+<label class="relative cursor-pointer">
+<input checked="" class="peer sr-only" name="difficulty" type="radio" value="standard"/>
+<div class="min-h-[44px] flex items-center justify-center border border-outline-variant rounded bg-surface text-on-surface-variant text-label-mono font-label-mono uppercase peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary peer-checked:shadow-[0_0_12px_rgba(137,206,255,0.4)] peer-focus-visible:ring-2 peer-focus-visible:ring-primary peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-surface-container transition-all hover:bg-surface-variant">
+                                    Standard
+                                </div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="difficulty" type="radio" value="expert"/>
+<div class="min-h-[44px] flex items-center justify-center border border-outline-variant rounded bg-surface text-on-surface-variant text-label-mono font-label-mono uppercase peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary peer-focus-visible:ring-2 peer-focus-visible:ring-primary peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-surface-container transition-all hover:bg-surface-variant">
+                                    Expert
+                                </div>
+</label>
+</div>
+</div>
+<!-- Ghost Piece Toggle -->
+<div class="flex items-center justify-between min-h-[44px]">
+<div>
+<span class="text-label-mono font-label-mono text-on-surface block">Predictive Projection</span>
+<span class="text-label-mono font-label-mono text-on-surface-variant text-[12px] opacity-70">Display ghost piece indicator</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-7 bg-surface border border-outline-variant peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary peer-focus:ring-offset-2 peer-focus:ring-offset-surface-container rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-outline-variant after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary peer-checked:after:bg-on-primary peer-checked:shadow-[0_0_8px_rgba(137,206,255,0.4)]"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- CONTROLS SETTINGS PANEL -->
+<section class="bg-surface-container border border-outline-variant rounded-lg p-panel-padding flex flex-col gap-6 shadow-[0_4px_24px_rgba(0,0,0,0.4)]">
+<header class="flex items-center gap-3 border-b border-outline-variant pb-3">
+<span class="material-symbols-outlined text-primary">touch_app</span>
+<h2 class="text-label-lg-bold font-label-lg-bold text-on-surface tracking-wider uppercase">Input Interface</h2>
+</header>
+<div class="flex flex-col gap-3 group">
+<div class="flex justify-between items-center">
+<div>
+<label class="text-label-mono font-label-mono text-on-surface group-focus-within:text-primary transition-colors block" for="input-sens">DAS / ARR Sensitivity</label>
+<span class="text-label-mono font-label-mono text-on-surface-variant text-[12px] opacity-70">Auto-repeat rate for lateral movement</span>
+</div>
+<span class="text-label-mono font-label-mono text-primary bg-surface border border-outline-variant px-2 py-1 rounded min-w-[3rem] text-center">Fast</span>
+</div>
+<div class="flex items-center gap-4 min-h-[44px] mt-2">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">directions_walk</span>
+<input aria-label="Input Sensitivity" class="w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface-container rounded-sm" id="input-sens" max="100" min="0" type="range" value="75"/>
+<span class="material-symbols-outlined text-primary text-xl drop-shadow-[0_0_4px_rgba(137,206,255,0.6)]">speed</span>
+</div>
+</div>
+</section>
+<!-- DANGER ZONE PANEL -->
+<section class="bg-surface-container border border-error/30 rounded-lg p-panel-padding flex flex-col gap-4 mt-4">
+<header class="flex items-center gap-3 border-b border-error/30 pb-3">
+<span class="material-symbols-outlined text-error">warning</span>
+<h2 class="text-label-lg-bold font-label-lg-bold text-error tracking-wider uppercase">Data Integrity</h2>
+</header>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                    Emergency recovery option. This will purge all local high scores, saved configurations, and telemetry data. This action cannot be reversed.
+                </p>
+<button class="w-full sm:w-auto self-start mt-2 min-h-[44px] px-6 flex items-center justify-center gap-2 bg-surface border border-error text-error text-label-mono font-label-mono uppercase rounded hover:bg-error hover:text-on-error focus:outline-none focus:ring-2 focus:ring-error focus:ring-offset-2 focus:ring-offset-surface-container transition-all group shadow-[0_0_0_rgba(255,180,171,0)] hover:shadow-[0_0_12px_rgba(255,180,171,0.4)]">
+<span class="material-symbols-outlined group-hover:text-on-error transition-colors">delete_forever</span>
+                    Clear Local Storage
+                </button>
+</section>
+</div>
+</main>
+</body></html>
